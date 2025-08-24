@@ -1,0 +1,12 @@
+status: Infer
+_Attributes:
+  model_type: UNet
+Model:
+  name: UNet
+Transforms:
+  - type: Normalize
+    mean: [0.485, 0.456, 0.406]
+    std: [0.229, 0.224, 0.225]
+    to_rgb: True
+num_classes: 8
+in_channels: 3

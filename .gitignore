@@ -1,0 +1,20 @@
+# Vue/Node.js相关
+/node_modules
+/dist
+.DS_Store
+npm-debug.log*
+yarn-debug.log*
+
+# Python相关
+__pycache__/
+*.pyc
+.env
+.venv
+
+# 忽略临时文件和生成的图片
+/static/images/
+/static/results/
+/temp_uploads/
+
+# Paddle模型文件，因为它们可能很大
+/models/

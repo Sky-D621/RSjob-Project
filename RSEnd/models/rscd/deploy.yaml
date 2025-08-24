@@ -1,0 +1,11 @@
+Deploy:
+  # 模型文件和参数文件的路径
+  model: model.pdmodel
+  params: model.pdiparams
+  # 定义预测时的数据预处理流程
+  transforms:
+    - type: Resize
+      target_size: [128, 128] # <--- 我们将从这里开始试验！
+    - type: Normalize
+      mean: [0.5, 0.5, 0.5]
+      std: [0.5, 0.5, 0.5]
